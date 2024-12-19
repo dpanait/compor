@@ -1,0 +1,17 @@
+{
+
+    "description": "Login App",
+    "authors": [
+        {
+            "name": "dpanait",
+            "email": "dpanait195@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    }
+}

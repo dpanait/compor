@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirigir todo a la carpeta public, eliminando el prefijo
+RewriteBase /compor/
+RewriteRule ^(.*)$ public/$1 [L]
