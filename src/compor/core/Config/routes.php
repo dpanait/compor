@@ -9,9 +9,6 @@ use Core\View;
 $container = new Container();
 $container->setService('droot', '/compor/');
 $container->setService('environment', 'pre');
-$container->setService('version', 'pre/dani_d1');
-$container->setService('domain', 'buygest.kuuvoo.com');
-$container->setService('url_api', "https://{$container->resolve('domain')}/{$container->resolve('version')}/yuubbbshop/data_fichar");
 
 //echo $container->get('droot');
 ini_set('session.gc_maxlifetime', 3600 * 24); // 1 hora
