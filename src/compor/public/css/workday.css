@@ -22,12 +22,12 @@ header {
   position: relative;
   text-align: center;
 }
-header #logout{
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
+#logout a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 header a {
   color: #fff;
   text-decoration: none;

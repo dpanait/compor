@@ -16,7 +16,7 @@
         </div>
         <div>
           <label for="password">Password</label>
-          <input type="text" class="form-control" aria-label="Text input with radio button"  name="password" id="password" required>
+          <input type="password" class="form-control" aria-label="Text input with radio button"  name="password" id="password" required>
         </div>
         
         <button class="btn btn-outline-secondary" type="button" id="stop_camera"><i class="bi bi-camera-video-off"></i></button>
