@@ -9,7 +9,33 @@ services:
       - ./src:/var/www/html
     networks:
       - app-network
-
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: compor
+      MYSQL_USER: compor_user
+      MYSQL_PASSWORD: password
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-container
+    environment:
+      PMA_HOST: mysql         # Nombre del servicio MySQL en el archivo docker-compose
+      PMA_USER: compor_user          # Usuario para conectarse
+      PMA_PASSWORD: password # Contraseña del usuario
+    ports:
+      - "8081:80"             # Exponer phpMyAdmin en el puerto 8081
+    networks:
+      - app-network 
+volumes:
+  db-data:
 networks:
   app-network:
     driver: bridge

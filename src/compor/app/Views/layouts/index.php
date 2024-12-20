@@ -17,12 +17,10 @@
         <div class="container-fluid">
             <!-- Brand/Logo -->
             <a class="navbar-brand" href="#"><i class="fa-solid fa-ring"></i></a>
-            
             <!-- Hamburger Menu (for mobile) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
@@ -34,8 +32,7 @@
                     </li>
                 </ul>
 				<div id="logout"><a href="<?=View::$droot;?>login/logout">Cerrar Sesión</a></div>
-            </div>
-			
+            </div>	
         </div>
     </nav>
 	<div class="container">
